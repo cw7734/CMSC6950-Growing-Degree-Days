@@ -13,3 +13,4 @@
 7.make changes to your local branch, as example, the Git config will add to my local branch 
 8.git add XXX, for example, git add "Git Config", add this config file to local branch(xiaowang)
 9.git commit -m "add git config" as an example
+10.git push -u origin xiaowang , this step to push whole xiaowang branch to remote server
