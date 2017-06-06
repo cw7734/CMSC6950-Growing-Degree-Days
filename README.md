@@ -4,6 +4,7 @@ Follow the "Git Config" file to set up the local git env
 Install wget
 
 sudo apt install wget
+
 sudo pip install wget
 clone the branch to your local
 
