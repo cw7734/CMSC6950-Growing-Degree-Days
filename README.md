@@ -37,8 +37,6 @@ $ make test
 # To generate files by file name (Ex. report.pdf). 
 $ make report.pdf
 
-# To generate interactive plot for Optional Task # 5.
-$ bokeh serve source/opTask5.py --show
 ```
 
 
