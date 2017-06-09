@@ -6,7 +6,7 @@ This is a project for the course CMSC6950.
 *  chen wei
 * Thanjida Akhter
 * Md Kamrul Hasan
-*
+* Yuan Zhi
 *
 *
 *
