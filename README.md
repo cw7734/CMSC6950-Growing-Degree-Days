@@ -4,7 +4,7 @@ This is a project for the course CMSC6950.
 
 ### Group member
 *  chen wei
-*
+* Thanjida Akhter
 *
 *
 *
