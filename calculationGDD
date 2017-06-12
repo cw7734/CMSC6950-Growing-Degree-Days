@@ -11,4 +11,9 @@ def sureData(dada):
            GDD.append(i)
     return GDD
 
-
+#calculating the values of GDD
+def calculate_GDD(Data):
+    baseT=10
+    Data['GDD'] = ((Data['Max Temp (°C)'] + Data['Min Temp (°C)'])/2) -10
+    Data['GDD'] = sureData(Data['GDD'])
+    return Data
