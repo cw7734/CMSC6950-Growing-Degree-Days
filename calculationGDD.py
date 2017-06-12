@@ -31,8 +31,7 @@ def min_temp(data):
             minimalT.append(10)
          else:
             minimalT.append(i)
-    return minimalT
-        
+    return minimalT     
 
 #calculating the values of GDD
 def calculate_GDD(annual):
@@ -42,9 +41,8 @@ def calculate_GDD(annual):
     annual['GDD'] = sure_Data(annual['GDD'])
     return annual
 
-#accumulating GDD 
 
-#obtain the data
+#obtain the data and calculate accumulate GDD
 def parseData(data,infor):
    cityName = infor[0]
    start = infor[1]
@@ -56,10 +54,13 @@ def parseData(data,infor):
        annual = data[data['Date/Time'].str.contains(str(year))]
        df=calculate_GDD(annual)
        DataBuffer.append(df)
-       with open(GDDfilename, 'w+') as datafile:
-            Data = pd.concat(DataBuffer) 
-            Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
-       
+   with open(GDDfilename, 'w+') as datafile:
+       Data = pd.concat(DataBuffer) 
+       Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
+   Data = pd.read_csv(GDDfilename, encoding = 'utf-8', index_col=0) 
+   Data['accGDD']=np.cumsum(Data['GDD']) 
+   Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
+
 def run():
     files = get_allfiles()
     for element in files:
