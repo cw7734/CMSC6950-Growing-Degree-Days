@@ -1,0 +1,14 @@
+import os
+import argparse
+import pandas as pd
+import numpy as np
+
+#keeping all the values of GDD are higher than zero
+def sureData(dada):
+    GDD = []
+    for i in data:
+        if i >= 0:
+           GDD.append(i)
+    return GDD
+
+
