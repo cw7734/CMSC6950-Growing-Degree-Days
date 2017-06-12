@@ -1,10 +1,19 @@
+#!/usr/bin/Python
 import os
 import argparse
 import pandas as pd
 import numpy as np
 
+plotpath = (os.getcwd()+'/Plot/')
+filepath = (os.getcwd()+'/DataFiles/')
+
+def get_allfiles():
+     files = os.listdir(filepath)
+     return files
+
+
 #keeping all the values of GDD are higher than zero
-def sureData(dada):
+def sure_Data(dada):
     GDD = []
     for i in data:
         if i >= 0:
@@ -12,8 +21,31 @@ def sureData(dada):
     return GDD
 
 #calculating the values of GDD
-def calculate_GDD(Data):
+def calculate_GDD(annual):
     baseT=10
-    Data['GDD'] = ((Data['Max Temp (°C)'] + Data['Min Temp (°C)'])/2) -10
-    Data['GDD'] = sureData(Data['GDD'])
-    return Data
+    annual['GDD'] = ((annual['Max Temp (°C)'] + annual['Min Temp (°C)'])/2) -10
+    annual['GDD'] = sureData(annual['GDD'])
+    return annual
+
+#obtain the data
+def parseData(data,infor):
+   cityName = infor[0]
+   start = infor[1]
+   end = infor[2]
+   list_years = list(range(int(start),int(end)+1))
+   for year in list_years:
+       annual = data[data['Data/Time'].str.contains(str(year))]
+       calculate_GDD(annual)       
+
+
+def run():
+    files = get_allfiles()
+    for element in files:
+        Data = pd.read_csv(filepath+element, encoding = 'utf-8', index_col=0)
+        placeInfo = element[:-4].split('_')[2:]
+        parseData(Data,placeInfo)
+
+if _name_=='_main_':
+    if os.path.exists(plotpath):
+        shutil.rmtree(plotpath)
+    run()
