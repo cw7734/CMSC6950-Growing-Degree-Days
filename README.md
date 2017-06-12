@@ -44,8 +44,8 @@ $ make report.pdf
 ### Follow the "Git Config" file to set up the local git env
 
 ### Install wget
-* sudo apt install wget
-* sudo pip install wget
+* sudo apt install wget ( Mac or Linux)
+* pip install wget (Windows)
 
 ### clone the branch to your local
 1. git fetch origin
