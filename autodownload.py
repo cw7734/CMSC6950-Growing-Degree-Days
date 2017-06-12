@@ -8,7 +8,7 @@ import numpy as np
 import getopt
 import shutil
 
-list_years = list(range(2012,2018))
+list_years = list(range(2013,2018))
 dict_cities = {'ST JOHNS':'48871', 'HALIFAX':'50620', 'TORONTO':'48549', 'VANCOUVER':'888'}
 
 url_template = 'http://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID={0}&Year={1}&Month=12&Day=1&timeframe=2&submit=Download+Data'
