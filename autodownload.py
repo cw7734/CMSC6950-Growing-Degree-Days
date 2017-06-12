@@ -1,4 +1,5 @@
 #!/usr/bin/Python
+# coding=utf-8
 import wget
 import os, sys, stat
 import time
