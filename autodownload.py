@@ -50,9 +50,6 @@ def main():
         if len(cities)==len(stations) and len(cities)>0:
                 dict_cities = dict(zip(cities, stations))
                       
-        if os.path.exists(filepath):
-            shutil.rmtree(filepath)
-        os.makedirs(filepath)
         download_data()
 
 if __name__ == '__main__':
