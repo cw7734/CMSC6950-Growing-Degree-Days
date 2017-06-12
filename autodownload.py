@@ -55,6 +55,7 @@ def main():
         os.makedirs(filepath)
         download_data()
 
+# run main only when this module run directly, not run from import
 if __name__ == '__main__':
        main() 
 
