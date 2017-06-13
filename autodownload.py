@@ -7,7 +7,9 @@ import numpy as np
 import getopt
 import shutil
 
+# basic information of years, cities and the url of download web, also give the file path
 list_years = list(range(2013,2018))
+
 dict_cities = {'ST JOHNS':'48871', 'HALIFAX':'50620', 'TORONTO':'48549', 'VANCOUVER':'888'}
 
 url_template = 'http://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID={0}&Year={1}&Month=12&Day=1&timeframe=2&submit=Download+Data'
@@ -15,6 +17,7 @@ url_template = 'http://climate.weather.gc.ca/climate_data/bulk_data_e.html?forma
 # the method getcwd() returns current working directory of a process
 filepath= (os.getcwd()+'/DataFiles/')
 
+# define the auto download function which can download the data for the given years and cities automatically
 def download_data(years = list_years,cities = dict_cities):
         for key in dict_cities.keys():
                 GDDfilename = filepath+'GDD_Data_'+key+'_'+str(list_years[0])+'_'+str(list_years[-1])+'.csv'
@@ -31,6 +34,7 @@ def download_data(years = list_years,cities = dict_cities):
                         Data = pd.concat(DataBuffer)                        
                         Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
 
+# define the main function to call the download_data function
 def main():
         global list_years
         global dict_cities

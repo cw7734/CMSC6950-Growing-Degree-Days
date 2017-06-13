@@ -38,9 +38,9 @@ Submitted by \\[\baselineskip]
 {\itshape In this report, we calculated the growing degree days (GDD) based on different Canadian city's weather history.  The three cities we chose are : St.John's, Halifax, Toronto. \\
 }
 
-%\newpage
-%\tableofcontents
-%\newpage
+
+
+
 
 \section{ \bf Introduction}
 Growing degree days (GDD) is simply a predictive tool used in horticulture for accessing crop maturity and development. The equation for calculating the GDD, Eqn.(\ref{eqn:gdd}), is given as follows:
@@ -53,7 +53,7 @@ Growing degree days (GDD) is simply a predictive tool used in horticulture for a
 \noindent where {$T_{max}$} is the daily maximum temperature and {$T_{min}$} is the daily minimum temperature. {$T_{base}$} is the base temperature, which is the minimum temperature required for the growth of a particular crop. For the GDD calculations reported in the study, {$T_{base}$} is considered to be 10 $^{\circ}$C.\\
 
 
-\section{ \bf Methodology}
+\section{ \bf Data and Graph}
 \subsection{Data Collection}
 The data for the daily historical temperatures for the selected cities were downloaded from: http://climate.weather.gc.ca. From the collected data, the minimum and maximum daily temperature values all year round were extracted for the selected cities. Daily GDD values were then computed and the results were analyzed and plotted as graphs. A summary of the approach adopted in data collection and analysis is presented below:
 
@@ -76,43 +76,127 @@ Growing Degree Day (GDD) are calculated by taking the difference between the ave
 
 \[ \left(\frac {20+10}{2}\right)-10=5 \] \par
 
+\subsection{ \bf St.Johns }
 
-\subsection{ \bf Core Project Tasks }
 
-\begin{enumerate}
 
-\item  Plots 
+
+
 \begin{center}
-\begin{figure}[!h]
-\includegraphics[width=3.25in]{../../plots/min_max_plot_St_Johns.png}
+\begin{figure}
+\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2013.png}
 
-\includegraphics[width=3.25in]{../../plots/min_max_plot_HALIFAX.png}
+\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2014.png}
 
-\includegraphics[width=3.25in]{../../plots/min_max_plot_TORONTO.png}
+\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2015.png}
 
-\caption{Cycle of minimum and maximum daily temperatures in 2015 for selected cities.}
+\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2016.png}
+
+\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2017.png}
+
+\caption{Cycle of minimum and maximum daily temperatures for St.Johns.}
 \label{gdd_min-max}
 \end{figure}
 \end{center}
 
 
 
+
+
+
+
+\subsection{ \bf Halifax }
+
+\begin{enumerate}
+
+\item  Plots 
+
 \begin{center}
 \begin{figure}[!h]
-\includegraphics[width=3.25in]{../../Plots/GDD_Plot.png}
-\caption{2015 Annual cumulative GDD for selected cities.}
-\label{gdd_ann-cycle}
+\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2013.png}
+
+\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2014.png}
+
+\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2015.png}
+
+\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2016.png}
+
+\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2017.png}
+
+\caption{Cycle of minimum and maximum daily temperatures for Halifax}
+\label{gdd_min-max}
 \end{figure}
 \end{center}
 
+
+
 \end{enumerate}
 
-%\subsection{Use version control (git) and collaboration tools (GitHub)}
-%\subsection{Create a LaTeX report summarizing the results of your project}
-%\subsection{Create a web based presentation for your results}
-%\subsection{Implement your entire workflow as a Makefile. Ensure that your entire project is reproducible}
-%\subsection{Create a test-suite (using the Python package nose) to demonstrate your GDD calculation works as intended}
-%\subsection{Project should include adequate documentation both with your source code and Readme.md file}
+
+
+
+
+\subsection{ \bf Toronto }
+
+\begin{enumerate}
+
+\item  Plots 
+
+\begin{center}
+\begin{figure}[!h]
+\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2013.png}
+
+\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2014.png}
+
+\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2015.png}
+
+\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2016.png}
+
+\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2017.png}
+
+\caption{Cycle of minimum and maximum daily temperatures for Toronto.}
+
+\end{figure}
+\end{center}
+
+
+
+\end{enumerate}
+
+
+
+\subsection{ \bf Vancouver }
+
+\begin{enumerate}
+
+\item  Plots 
+
+\begin{center}
+\begin{figure}[!h]
+\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2013.png}
+
+\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2014.png}
+
+\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2015.png}
+
+\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2016.png}
+
+\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2017.png}
+
+
+\caption{Cycle of minimum and maximum daily temperatures for Vancouver.}
+\label{gdd_min-max}
+\end{figure}
+\end{center}
+
+
+
+\end{enumerate}
+
+
+
+
+
 
 
 \section{ \bf Results}
@@ -127,55 +211,6 @@ Growing Degree Day (GDD) are calculated by taking the difference between the ave
 \section{References}
 
 
-%\bibliography{./source/Report/references.bib}
 
-
-
-%\section{ \bf Software Architecture}
-%\subsection{Tools Used}
-%\subsubsection{Programming Language}
-%\subsubsection{Version Control}
-%\subsection{Components}
-%\subsubsection{Makefile}
-%\subsubsection{Plots}
-%\subsubsection{Report}
-%\subsubsection{Presentation}
-
-%\section{ \bf Core Tasks}
-%\subsection{Download daily historical temperature data for several cities}
-%\subsection{Create a plot showing an annual cycle of min/max daily temperatures. Do this for at least three selected Canadian cities.}
-%\subsection{A command line program that takes arguments.}
-%This program should calculate the GDD. Internally your program should handle the command line arguments and implement the actual calculation as one or more functions. The output from this program needs to be persistently stored. Your choice on how to implement this storage. Later steps in your work flow must use the results of these calculations.
-%\subsection{Create plots showing accumulated GDD vs time for selected cities}
-
-%\subsection{Use version control (git) and collaboration tools (GitHub)}
-%\subsection{Create a LaTeX report summarizing the results of your project}
-%\subsection{Create a web based presentation for your results}
-%\subsection{Implement your entire workflow as a Makefile. Ensure that your entire project is reproducible}
-%\subsection{Create a test-suite (using the Python package nose) to demonstrate your GDD calculation works as intended}
-%\subsection{Project should include adequate documentation both with your source code and Readme.md file}
-
-
-%\section{ \bf Optional Tasks}
-%\subsection{Create an plot showing GDD like the example below for selected Canadian cities}
-%\subsection{Create a map showing effective growing degrees over both all of Canada and only for the island of Newfoundland.}
-%\subsection{Explore how GDD calculation depends on the choice of $T_{base}$. show your results for either selected cities or create maps}
-%\subsection{Create standalone bokeh plots embeded in your HTML presentation}
-%\subsection{Create a bokeh server plot so that you can look at the accumulated GDD for any city in Canada.}
-
-
-
-%\section{Conclusion}
-%The daily GDD of three cities in Canada (St. John's, Montreal and Calgary) were calculated for the year 2015. The summation of the daily GDD units were used to compare heat accumulation in these cities. The results obtained indicate that the city of Montreal had the highest cumulative GDD of 1448 $^{\circ}$C for the year 2015 among the selected cities. The city of St. John's had the lowest GDD of 501 $^{\circ}$C, while Calgary had a moderate GDD of 796 $^{\circ}$C.
-
-%\bibliographystyle{plain}
-%\bibliography{./source/Report/references.bib}
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[scale=.5]{./Plots/GDD_Plot.png}
-%\caption{GDD Cumulative Plot}
-%\label{fig: GDD Plot}
-%\end{figure}
 
 \end{document}

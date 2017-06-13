@@ -33,7 +33,7 @@ This is a project for the course CMSC6950.
 
 ```bash
 # To call the Makefile and execute all.
-$ make
+$ make all
 
 # To removing all the downloaded data and complied files.
 $ make clean
