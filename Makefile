@@ -13,7 +13,11 @@ plot_min_max:
 	python $(r)min_max.py
 calculation_accGDD:
 	python $(r)calculationGDD.py
-AccGDD_plot:
-	python $(r)AccGDD_plot.py
+AccGDD_plot_single:
+	python $(r)AccGDD_plot_single.py
+AccGDD_plot_all:
+	python $(r)AccGDD_plot_all.py
+Different_T_base:
+	python $(r)secondary3.py
 
-all: autodownload plot_min_max calculation_accGDD AccGDD_plot
+all: autodownload plot_min_max calculation_accGDD AccGDD_plot_single AccGDD_plot_all Different_T_base

@@ -56,7 +56,7 @@ def main():
                 dict_cities = dict(zip(cities, stations))
                       
         if os.path.exists(filepath):
-            shutil.rmtree(filepath)   # delete an entire directory tree
+            shutil.rmtree(filepath)
         os.makedirs(filepath)
         download_data()
 
