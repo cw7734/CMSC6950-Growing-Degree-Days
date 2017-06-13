@@ -25,42 +25,79 @@ class: middle, center
 
 ---
 
-# Agenda
 
-1. Introduction
-2. Data and Graphs
-3. analysis
 
+#. Introduction
+#. Methods
+#. Graphs and Analysis
+#. Summary
 ---
 
 # Introduction
 
-In this report, we calculated the growing degree days (GDD) based on different Canadian city's weather history. Three major cities were considered, namely: St. John’s, Halifax, and Toronto. The data collected was for the year 2015. The calculated GDD varies among the three cities considered.
+Growing degree days (GDD) are a meausre of heat accumulation, which can predict the date that a flower will bloom or maturity of a insect. The calculation of GDD is given in the following formula:
+
+GDD=(T_max+T_min)/2-T_base. 
+
+where T_max is the maximum daily temperature, T_min is the minimum daily temperature. The base temperature(T_base) usually set to be 10 celsius, moreover, if T_max or T_min are less than T_base, then set them to be T_base which guarantees GDD always greater than zero. In our project, we try to calculate accumulated GDD for the following cities: St.John's, Halifax, Toronto and Vancouver. 
 
 ---
-# Data and Graphs
+# Method
+In our project, firstly, we wrote a python program to download the historical data from web automatically, secondly we plotted the maximun and minimun daily temperature of our given cities. By using the maximun and minimun temperature we calculated the accumulated GDD of the four cities and did the plot for accumulated GDD. 
+
+
 
 ---
-1. The Max and Min daily tempreture of St.John's
-.image-50[![sketch](ST JOHNS/day_vs_temp_2013.png)]
-.image-50 img{
-  width: 20%;
-}
----
-2. The Max and Min daily tempreture of Halifax
+class: middle, center
 
-![sketch](HALIFAX/day_vs_temp_2013.png)
-![alt](HALIFAX/day_vs_temp_2013.png =50%x25%)
+# Graphs and Analysis
 ---
+# The Max and Min daily tempreture of St.John's in 2013
 
-3. The Max and Min daily tempreture of Toronto
-![sketch](TORONTO/day_vs_temp_2013.png)
+![](ST JOHNS/day_vs_temp_2013.png)
+
+---
+#The acccumulated GDD of St.John's in 2013
+![](stjohns.png)
 ---
 
-4. The accumulated GDD vs time for the selected cities.
-![](GDD_Plot.png)
+# The Max and Min daily tempreture of Halifax in 2013
+
+![](HALIFAX/day_vs_temp_2013.png)
+
+---
+#The acccumulated GDD of Halifax in 2013
+![The Max and Min daily tempreture of Vancouver](halifax.png)
+---
+
+# The Max and Min daily tempreture of Toronto in 2013
+![The Max and Min daily tempreture of Toronto](TORONTO/day_vs_temp_2013.png)
+---
+
+#The acccumulated GDD of Toronto in 2013
+![](toronto.png)
+---
+# The Max and Min daily tempreture of Vancouver in 2013
+
+![The Max and Min daily tempreture of Vancouver](Vancouver/day_vs_temp_2013.png)
+---
+
+#The acccumulated GDD of Vancouver in 2013
+![](vancuver.png)
+---
 
 
+# Summary
+From our graphs of accumulated GDD for the given cities, we conclude the following results:
+1. max and min  
+2. GDD
+3. CITY
+4. RESULT
+
+---
+class: middle, center
+
+#.center[Thank you!]
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
