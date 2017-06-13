@@ -31,7 +31,7 @@ for file,type in zip(files,types[:len(files)]):
     temp['accGDD'] = temp['GDD'].cumsum()
     temp.to_csv(os.path.join(os.getcwd(),'ProcessData',city+'.csv'),index=False)
 
-    plt.plot(temp['Date'],temp['aGDD'],type,label= city)
+    plt.plot(temp['Date'],temp['accGDD'],type,label= city)
     
 
 plt.legend(loc='upper left')
