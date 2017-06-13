@@ -25,13 +25,13 @@ for file,type in zip(files,types[:len(files)]):
     temp = pd.read_csv(os.path.join(filepath,file),sep=',',parse_dates=['Date/Time'], date_parser=dateparse)
     temp.columns=['Index','Date','MaxTemp','MinTemp']
     temp['MinTemp'] = [x if x > 10 else 10 for x in temp['MinTemp']]
-    temp['AvgTemp'] = (temp['MaxTemp']+temp['MinTemp'])/2.0 - 10.0
-    temp['CDD'] = [x if x>0 else 0 for x in temp['AvgTemp']]
+    temp['rGDD'] = (temp['MaxTemp']+temp['MinTemp'])/2.0 - 10.0
+    temp['GDD'] = [x if x>0 else 0 for x in temp['rGDD']]
     temp = temp.sort_values(['Date'])
-    temp['CumCDD'] = temp['CDD'].cumsum()
+    temp['accGDD'] = temp['GDD'].cumsum()
     temp.to_csv(os.path.join(os.getcwd(),'ProcessData',city+'.csv'),index=False)
 
-    plt.plot(temp['Date'],temp['CumCDD'],type,label= city)
+    plt.plot(temp['Date'],temp['aGDD'],type,label= city)
     
 
 plt.legend(loc='upper left')
