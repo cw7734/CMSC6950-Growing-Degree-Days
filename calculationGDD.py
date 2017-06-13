@@ -4,6 +4,7 @@ import csv
 import argparse
 import pandas as pd
 import numpy as np
+import shutil
 
 plotpath = (os.getcwd()+'/Plot/')
 filepath = (os.getcwd()+'/DataFiles/')
@@ -13,17 +14,17 @@ def get_allfiles():
      return files
 
 
-#Find the accumulated GDD.
+#keeping all the values of GDD are higher than zero
 def sure_Data(data):
     GDD = []
-    item = 0
     for i in data:
         if i >= 0:
-            item += i
-        GDD.append(item)
+           GDD.append(i)
+        else:
+           GDD.append(0)
     return GDD
 
-#If the T_min is less than T_base, then set T_min=T_base by definition of calculating GDD.
+#set the min temperature is equal to or higher than base Temperature
 def min_temp(data):
     minimalT = []
     for i in data:
@@ -31,10 +32,9 @@ def min_temp(data):
             minimalT.append(10)
          else:
             minimalT.append(i)
-    return minimalT
-        
+    return minimalT     
 
-#calculating the values of GDD using the formula: GDD=(T_max+T_min)/2-T_base(if T_min<T_base, then set T_min=T_base).
+#calculating the values of GDD
 def calculate_GDD(annual):
     baseT=10
     annual['MinTemp(°C)']= min_temp(annual['Min Temp (°C)'])
@@ -43,23 +43,28 @@ def calculate_GDD(annual):
     return annual
 
 
-
-#obtain the data
+#obtain the data and calculate accumulate GDD
 def parseData(data,infor):
    cityName = infor[0]
    start = infor[1]
    end = infor[2]
    list_years = list(range(int(start),int(end)+1))
-   GDDfilename = filepath+'GDD_Value_'+cityName+'_'+start+'_'+end+'.csv'
+   GDDfilename = filepath+'GDD_Data_'+cityName+'_'+start+'_'+end+'.csv'
    DataBuffer = []
    for year in list_years:
        annual = data[data['Date/Time'].str.contains(str(year))]
        df=calculate_GDD(annual)
        DataBuffer.append(df)
-       with open(GDDfilename, 'w+') as datafile:
-            Data = pd.concat(DataBuffer) 
-            Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
-       
+   with open(GDDfilename, 'w+') as datafile:
+       Data = pd.concat(DataBuffer) 
+       Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
+   Data = pd.read_csv(GDDfilename, encoding = 'utf-8', index_col=0) 
+   Data['accGDD']=np.cumsum(Data['GDD'])
+   Data.replace('', np.nan, inplace = True)
+   Data = Data.dropna()
+   DataBuffer.append(Data)
+   Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
+
 def run():
     files = get_allfiles()
     for element in files:
@@ -69,4 +74,5 @@ def run():
 
 
 if __name__=='__main__':
+
     run()

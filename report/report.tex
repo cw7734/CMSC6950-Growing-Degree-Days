@@ -6,6 +6,8 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{caption}
+\usepackage{caption,float}
+\usepackage[vmargin=3cm,hmargin=3cm]{geometry}
 
 \begin{document}
 
@@ -55,15 +57,9 @@ Growing degree days (GDD) is simply a predictive tool used in horticulture for a
 
 \section{ \bf Data and Graph}
 \subsection{Data Collection}
-The data for the daily historical temperatures for the selected cities were downloaded from: http://climate.weather.gc.ca. From the collected data, the minimum and maximum daily temperature values all year round were extracted for the selected cities. Daily GDD values were then computed and the results were analyzed and plotted as graphs. A summary of the approach adopted in data collection and analysis is presented below:
+The data for the daily historical temperatures for the selected cities were downloaded from From the collected data, the minimum and maximum daily temperature values all year round were extracted for the selected cities. Daily GDD values were then computed and the results were analyzed and plotted as graphs. A summary of the approach adopted in data collection and analysis is presented below:
 
-\begin{itemize}
-\item Download daily historical data for the three selected cities. 
-\item Calculate Daily GDD for cities within the time range selected. 
-\item Compute Cumulative GDD for the cities within the selected time range.
-\item Create a plot showing variations in annual GDD cycle for the chosen cities within the selected time range. 
-\item Create a plot demonstrating accumulated GDD vs time for the chosen cities within the time frame selected. 
-\end{itemize}
+
 
 \subsection{Growing Degree Day Calculation}
 Growing Degree Day (GDD) are calculated by taking the difference between the average daily temperatures and a threshold base temperature, $T_{base}$, (usually 10$^{\circ}$C). The equation for GDD calculation is as follows: \vspace{5mm}
@@ -78,58 +74,69 @@ Growing Degree Day (GDD) are calculated by taking the difference between the ave
 
 \subsection{ \bf St.Johns }
 
+We analyzed the historical data in 2013 for St.John's. The maximum and minimum daily temperature as figure1 (\ref{1})  
 
 
 
 
+\begin{figure}[H]
 \begin{center}
-\begin{figure}
-\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2013.png}
-
-\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2014.png}
-
-\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2015.png}
-
-\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2016.png}
-
-\includegraphics[width=3.25in]{../Plot/St.Johns/day_vs_temp_2017.png}
+\includegraphics[width=5.25in]{Plot/St.Johns/day_vs_temp_2013.png}
 
 \caption{Cycle of minimum and maximum daily temperatures for St.Johns.}
-\label{gdd_min-max}
-\end{figure}
+\label{1}
 \end{center}
 
 
 
 
+
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=5.25in]{Plot/stjohns.png}
+
+
+
+\caption{Accumulated GDD for St.Johns in 2013}
+\label{1.1}
+
+
+\end{figure}
 
 
 
 \subsection{ \bf Halifax }
 
+The maximum and minimum daily temperature as figure2 (\ref{2}). From the figure we can conclude that in year 2013, the minimum temperature happened in mid of February 
 \begin{enumerate}
 
 \item  Plots 
 
 \begin{center}
-\begin{figure}[!h]
-\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2013.png}
+\begin{figure}[H]
+\includegraphics[width=5.25in]{Plot/HALIFAX/day_vs_temp_2013.png}
 
-\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2014.png}
 
-\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2015.png}
-
-\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2016.png}
-
-\includegraphics[width=3.25in]{../Plot/HALIFAX/day_vs_temp_2017.png}
 
 \caption{Cycle of minimum and maximum daily temperatures for Halifax}
-\label{gdd_min-max}
+\label{2}
 \end{figure}
 \end{center}
 
 
+\begin{figure}[H]
+\includegraphics[width=5.25in]{Plot/halifax.png}
 
+
+
+\caption{Accumulated GDD for Halifax in 2013}
+\label{2.2}
+\end{figure}
 \end{enumerate}
 
 
@@ -143,23 +150,24 @@ Growing Degree Day (GDD) are calculated by taking the difference between the ave
 \item  Plots 
 
 \begin{center}
-\begin{figure}[!h]
-\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2013.png}
+\begin{figure}[H]
+\includegraphics[width=5.25in]{Plot/Toronto/day_vs_temp_2013.png}
 
-\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2014.png}
 
-\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2015.png}
-
-\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2016.png}
-
-\includegraphics[width=3.25in]{../Plot/Toronto/day_vs_temp_2017.png}
 
 \caption{Cycle of minimum and maximum daily temperatures for Toronto.}
-
+\label{3}
 \end{figure}
 \end{center}
 
+\begin{figure}[H]
+\includegraphics[width=5.25in]{Plot/toronto.png}
 
+
+
+\caption{Accumulated GDD for Toronto in 2013}
+\label{3.3}
+\end{figure}
 
 \end{enumerate}
 
@@ -172,24 +180,25 @@ Growing Degree Day (GDD) are calculated by taking the difference between the ave
 \item  Plots 
 
 \begin{center}
-\begin{figure}[!h]
-\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2013.png}
+\begin{figure}[H]
+\includegraphics[width=5.25in]{Plot/VANCOUVER/day_vs_temp_2013.png}
 
-\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2014.png}
 
-\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2015.png}
-
-\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2016.png}
-
-\includegraphics[width=3.25in]{../Plot/VANCOUVER/day_vs_temp_2017.png}
 
 
 \caption{Cycle of minimum and maximum daily temperatures for Vancouver.}
-\label{gdd_min-max}
+\label{4}
 \end{figure}
 \end{center}
 
+\begin{figure}[H]
+\includegraphics[width=5.25in]{Plot/vancuver.png}
 
+
+
+\caption{Accumulated GDD for Vancouver in 2013}
+\label{4.4}
+\end{figure}
 
 \end{enumerate}
 
@@ -209,6 +218,14 @@ Growing Degree Day (GDD) are calculated by taking the difference between the ave
 
 
 \section{References}
+%\bibliographystyle{plain}
+\begin{enumerate}
+\item Gordon, R.; Bootsma, A. Analyses of growing degree-days for agriculture in Atlantic Canada \textbf{1993} \textit{Clim. Res.} 3: 169--179.
+\item \href{url}{$https://en.wikipedia.org/wiki/Growing_degree-day$}
+\item \href{url}{$http://www.farmwest.com/node/936$}
+\item \href{url}{$http://wine.wsu.edu/research-extension/weather/growing-degree-days/$}
+\item \href{url}{$http://whyfiles.org/2010/what-are-growing-degree-days/$}
+\end{enumerate}
 
 
 
