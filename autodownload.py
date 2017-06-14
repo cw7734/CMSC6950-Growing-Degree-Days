@@ -1,4 +1,5 @@
 #!/usr/bin/Python
+# coding=utf-8
 import wget
 import os, sys, stat
 import time
@@ -7,9 +8,9 @@ import numpy as np
 import getopt
 import shutil
 
-
 # basic information of years, cities and the url of download web, also give the file path
-list_years = list(range(2013,2017))
+
+list_years = list(range(2013,2018))
 
 dict_cities = {'ST JOHNS':'48871', 'HALIFAX':'50620', 'TORONTO':'48549', 'VANCOUVER':'888'}
 
@@ -34,7 +35,9 @@ def download_data(years = list_years,cities = dict_cities):
                         Data = pd.concat(DataBuffer)                        
                         Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
 
+
 # define the main function to call the download_data function
+
 def main():
         global list_years
         global dict_cities
@@ -54,10 +57,7 @@ def main():
                      stations = arg.upper().split()
         if len(cities)==len(stations) and len(cities)>0:
                 dict_cities = dict(zip(cities, stations))
-                      
-        if os.path.exists(filepath):
-            shutil.rmtree(filepath)
-        os.makedirs(filepath)
+
         download_data()
 
 if __name__ == '__main__':

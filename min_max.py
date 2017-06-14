@@ -15,7 +15,9 @@ def get_allfiles():
 	files = os.listdir(filepath)
 	return files
 
+
 # define min_max_plot function to plot the max and min daily temperature for the given cities
+
 def min_max_plot(cityName,year,annual):
 	if not os.path.exists(plotpath+str(cityName)):
 		os.makedirs(plotpath+str(cityName))
@@ -28,6 +30,7 @@ def min_max_plot(cityName,year,annual):
 	plt.legend(loc='upper left')
 	fig.savefig('Plot/'+str(cityName)+'/day_vs_temp_'+str(year)+'.png')
 
+
 # define parseData function that read all data from files
 def parseData(data,infor):
 	cityName = infor[0]
@@ -38,6 +41,7 @@ def parseData(data,infor):
 		annual = data[data['Date/Time'].str.contains(str(year))]
 		min_max_plot(cityName,year,annual)
 
+
 # define run function which insider of main function
 def run():
 	files = get_allfiles()
@@ -45,10 +49,7 @@ def run():
 		Data = pd.read_csv(filepath+element, encoding = 'utf-8',index_col=0)
 		placeInfo = element[:-4].split('_')[2:] # city startyear endyear
 		parseData(Data,placeInfo)
-		
-# define the main function
+
 if __name__ == '__main__':
-	if os.path.exists(plotpath):
-		shutil.rmtree(plotpath)
 	run()
 
