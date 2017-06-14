@@ -9,6 +9,7 @@ This is a project for the course CMSC6950.
 * Md Kamrul Hasan
 * Huizhong Liu
 * Yuan Zhi
+* Maulik Rawal
 
 
 
@@ -17,6 +18,31 @@ This is a project for the course CMSC6950.
 * sudo apt install wget ( Mac or Linux)
 * pip install wget (linux)
 * pip install bokeh (windows)
+
+### Use python packages
+1. pandas
+2. numpy
+3. getopt
+4. shutil
+5. matplotlib
+6. itertools
+7. weget
+8. time
+9. os, sys, stat
+10. csv
+11. argparse
+12. math
+
+### repository
+1. master 
+     code
+     test
+
+2. gh-page
+     data
+     plot 
+     report
+
 
 ### Create the local repository
 1. cd desktop
