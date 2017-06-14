@@ -1,4 +1,5 @@
 #!/usr/bin/Python
+# coding=utf-8
 import wget
 import os, sys, stat
 import time
@@ -7,9 +8,9 @@ import numpy as np
 import getopt
 import shutil
 
-
 # basic information of years, cities and the url of download web, also give the file path
-list_years = list(range(2013,2017))
+
+list_years = list(range(2013,2018))
 
 dict_cities = {'ST JOHNS':'48871', 'HALIFAX':'50620', 'TORONTO':'48549', 'VANCOUVER':'888'}
 
@@ -20,7 +21,7 @@ filepath= (os.getcwd()+'/DataFiles/')
 # define the auto download function which can download the data for the given years and cities automatically
 def download_data(years = list_years,cities = dict_cities):
         for key in dict_cities.keys():
-                GDDfilename = filepath+'GDD_Data_'+key+'_'+str(list_years[0])+'_'+str(list_years[-1])+'.csv'
+                GDDfilename = filepath+'RAW_Data_'+key+'_'+str(list_years[0])+'_'+str(list_years[-1])+'.csv'
                 DataBuffer = []
                 for year in list_years:
                         filename = wget.download(url_template.format(dict_cities[key],year))
@@ -34,7 +35,9 @@ def download_data(years = list_years,cities = dict_cities):
                         Data = pd.concat(DataBuffer)                        
                         Data.to_csv(GDDfilename, sep=',', encoding='utf-8')
 
+
 # define the main function to call the download_data function
+
 def main():
         global list_years
         global dict_cities
@@ -54,10 +57,7 @@ def main():
                      stations = arg.upper().split()
         if len(cities)==len(stations) and len(cities)>0:
                 dict_cities = dict(zip(cities, stations))
-                      
-        if os.path.exists(filepath):
-            shutil.rmtree(filepath)
-        os.makedirs(filepath)
+
         download_data()
 
 if __name__ == '__main__':

@@ -1,23 +1,35 @@
 # Source folder path from root directory
 r = ./
-
+p = ./Plot
+d = ./DataFiles
 
 # Provide list of cities, id and year here
-cityName = -p 'St.Johns,Halifax,Toronto,Vancouver'
-stationId = -i '48871 50620 48549 888'
-year = -y '2013 2013'
+place = -p 'st johns, halifax, toronto, vancouver'
+id = -i '48871 50620 48549 888'
+year = -y '2013 2017'
 
-autodownload :
-	python $(r)autodownload.py $(year) $(place) $(id)
-plot_min_max:
+accGDD: calculation_accGDD
+	python $(r)accGDD.py
+
+plot_min_max: autodownload
 	python $(r)min_max.py
-calculation_accGDD:
+
+autodownload : init
+	python $(r)autodownload.py $(year) $(place) $(id)
+
+calculation_accGDD: plot_min_max
 	python $(r)calculationGDD.py
-AccGDD_plot_single:
-	python $(r)AccGDD_plot_single.py
-AccGDD_plot_all:
-	python $(r)AccGDD_plot_all.py
+
+
 Different_T_base:
 	python $(r)secondary3.py
 
-all: autodownload plot_min_max calculation_accGDD AccGDD_plot_single AccGDD_plot_all Different_T_base
+clean:
+	rm -rf $(p)
+	rm -rf $(d)
+
+init:   clean
+	mkdir -p $(p)
+	mkdir -p $(d)
+	
+all:    accGDD 
