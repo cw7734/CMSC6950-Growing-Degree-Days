@@ -36,10 +36,10 @@ This is a project for the course CMSC6950. From wikipedia.org: Growing degree da
 
 ### repository
 1. master:
-     code,test
+     code, test
 
 2. gh-page: 
-     data,plot,report
+     data, plot, report
 
 
 ### Create the local repository
