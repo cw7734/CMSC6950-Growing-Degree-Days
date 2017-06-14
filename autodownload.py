@@ -21,7 +21,7 @@ filepath= (os.getcwd()+'/DataFiles/')
 # define the auto download function which can download the data for the given years and cities automatically
 def download_data(years = list_years,cities = dict_cities):
         for key in dict_cities.keys():
-                GDDfilename = filepath+'GDD_Data_'+key+'_'+str(list_years[0])+'_'+str(list_years[-1])+'.csv'
+                GDDfilename = filepath+'RAW_Data_'+key+'_'+str(list_years[0])+'_'+str(list_years[-1])+'.csv'
                 DataBuffer = []
                 for year in list_years:
                         filename = wget.download(url_template.format(dict_cities[key],year))

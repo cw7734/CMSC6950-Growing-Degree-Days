@@ -3,23 +3,23 @@
 This is a project for the course CMSC6950.
 
 ### Group member
-*  chen wei
+* chen wei
 * Thanjida Akhter
 * Md Kamrul Hasan
 * Huizhong Liu
 * Yuan Zhi
-*
+* XiaoWang
 *
 
 
 ### Install packages
 * sudo apt install wget ( Mac or Linux)
-* pip install wget (Windows)
+* pip install wget (linux)
 * pip install bokeh (windows)
 
 ### Create the local repository
 1. cd desktop
-2. mkdir filename
+2. mkdir folderName
 3. git init
 4. git remote add origin https://github.com/cw7734/CMSC6950-Growing-Degree-Days.git
 5. git pull
