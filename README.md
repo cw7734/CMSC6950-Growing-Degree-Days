@@ -3,13 +3,14 @@
 This is a project for the course CMSC6950.
 
 ### Group member
+* Xiao Wang
 * chen wei
 * Thanjida Akhter
 * Md Kamrul Hasan
 * Huizhong Liu
 * Yuan Zhi
-* XiaoWang
-*
+
+
 
 
 ### Install packages
@@ -33,7 +34,7 @@ This is a project for the course CMSC6950.
 
 ```bash
 # To call the Makefile and execute all.
-$ make all
+$ make 
 
 # To removing all the downloaded data and complied files.
 $ make clean
