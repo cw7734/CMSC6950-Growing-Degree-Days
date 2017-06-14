@@ -34,11 +34,11 @@ This is a project for the course CMSC6950.
 12. math
 
 ### repository
-1. master 
+1. master:
      code
      test
 
-2. gh-page
+2. gh-page: 
      data
      plot 
      report
