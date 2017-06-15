@@ -35,5 +35,8 @@ clean:
 init:   clean
 	mkdir -p $(p)
 	mkdir -p $(d)
+test: 
+	python $(r)test_GDD.py  && echo "CALCULATE_GDD... PASSED" || echo "CALCULATE_GDD... FAILED"
+      
 	
 all:    accGDD 

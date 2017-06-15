@@ -1,6 +1,6 @@
 # CMSC6950-Growing-Degree-Days
 
-This is a project for the course CMSC6950.
+This is a project for the course CMSC6950. From wikipedia.org: Growing degree day(s) (GDD), also called growing degree units (GDUs), are a heuristic tool in phenology. GDD are a measure of heat accumulation used by horticulturists, gardeners, and farmers to predict plant and animal development rates such as the date that a flower will bloom, or a crop will reach maturity.
 
 ### Group member
 * Xiao Wang
@@ -9,6 +9,7 @@ This is a project for the course CMSC6950.
 * Md Kamrul Hasan
 * Huizhong Liu
 * Yuan Zhi
+* Maulik Rawal
 
 
 
@@ -17,6 +18,29 @@ This is a project for the course CMSC6950.
 * sudo apt install wget ( Mac or Linux)
 * pip install wget (linux)
 * pip install bokeh (windows)
+* pip install pyqt5
+
+### Use python packages
+1. pandas
+2. numpy
+3. getopt
+4. shutil
+5. matplotlib
+6. itertools
+7. weget
+8. time
+9. os, sys, stat
+10. csv
+11. argparse
+12. math
+
+### repository
+1. master:
+     code, test
+
+2. gh-page: 
+     data, plot, report
+
 
 ### Create the local repository
 1. cd desktop
@@ -27,6 +51,31 @@ This is a project for the course CMSC6950.
 
 ### Create your own branch
 1. git branch branch_name
+
+
+### Task completed
+1. Minimum Core Tasks
+
+	* Download temperature 
+	* Min/max temperature
+	* Calculate the GDD
+	* Plot the GDD
+	* Plot the accumulated GDD
+	* Use version control (git) and collaboration tools(GitHub) throught this project
+	* Create a LaTeX report summarizing the results of your project
+	* Create a web based presenation for our results
+	* Implement our entire workflow as a Makefile and project is reproducible.
+	* Create a test suite to demonstrate our GDD calculation works as intended
+	* Create a Readme.md file to explain how to use/build your project.
+2. Secondary Tasks
+
+	* 
+
+
+
+
+
+
 
 
 
@@ -46,6 +95,8 @@ $ make test
 $ make report.pdf
 
 ```
+
+
 
 
 
