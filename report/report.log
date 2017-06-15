@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  15 JUN 2017 17:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  15 JUN 2017 20:59
 entering extended mode
 **./report.tex
 (report.tex
@@ -841,35 +841,62 @@ File: Plot/yearvan.png Graphic file (type png)
 Package pdftex.def Info: Plot/yearvan.png used on input line 330.
 (pdftex.def)             Requested size: 379.4175pt x 189.71341pt.
 
-<Plot/differentTbase.png, id=214, 462.528pt x 346.896pt>
-File: Plot/differentTbase.png Graphic file (type png)
+<Plot/differentT_baseforStJohns.png, id=214, 481.8pt x 240.9pt>
+File: Plot/differentT_baseforStJohns.png Graphic file (type png)
 
-<use Plot/differentTbase.png>
-Package pdftex.def Info: Plot/differentTbase.png used on input line 346.
-(pdftex.def)             Requested size: 379.4175pt x 284.5783pt.
- [12 <./Plot/yearvan.png>] [13 <./Plot/differentTbase.png>]
+<use Plot/differentT_baseforStJohns.png>
+Package pdftex.def Info: Plot/differentT_baseforStJohns.png used on input line 
+346.
+(pdftex.def)             Requested size: 379.4175pt x 189.71341pt.
+ [12 <./Plot/yearvan.png>]
+<Plot/differentT_baseforHalifax.png, id=221, 481.8pt x 240.9pt>
+File: Plot/differentT_baseforHalifax.png Graphic file (type png)
+
+<use Plot/differentT_baseforHalifax.png>
+Package pdftex.def Info: Plot/differentT_baseforHalifax.png used on input line 
+357.
+(pdftex.def)             Requested size: 379.4175pt x 189.71341pt.
+
+<Plot/differentT_baseforToronto.png, id=222, 481.8pt x 240.9pt>
+File: Plot/differentT_baseforToronto.png Graphic file (type png)
+
+<use Plot/differentT_baseforToronto.png>
+Package pdftex.def Info: Plot/differentT_baseforToronto.png used on input line 
+369.
+(pdftex.def)             Requested size: 379.4175pt x 189.71341pt.
+ [13 <./Plot/differentT_baseforStJohns.png> <./Plot/differentT_baseforHalifax.p
+ng>]
+<Plot/differentT_baseforVancouver.png, id=232, 481.8pt x 240.9pt>
+File: Plot/differentT_baseforVancouver.png Graphic file (type png)
+
+<use Plot/differentT_baseforVancouver.png>
+Package pdftex.def Info: Plot/differentT_baseforVancouver.png used on input lin
+e 380.
+(pdftex.def)             Requested size: 379.4175pt x 189.71341pt.
+ [14 <./Plot/differentT_baseforToronto.png> <./Plot/differentT_baseforVancouver
+.png>]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
-[14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 405.
+[15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 405.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 405.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 405.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 60421F942B327E0682168B898CAF97C0;1429.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 405.
  ) 
 Here is how much of TeX's memory you used:
- 8407 strings out of 493323
- 122682 string characters out of 3139067
- 227949 words of memory out of 3000000
- 11784 multiletter control sequences out of 15000+200000
+ 8429 strings out of 493323
+ 123372 string characters out of 3139067
+ 228257 words of memory out of 3000000
+ 11799 multiletter control sequences out of 15000+200000
  9816 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,6n,39p,525b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -882,9 +909,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on report.pdf (14 pages, 874659 bytes).
+Output written on report.pdf (15 pages, 961155 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 
