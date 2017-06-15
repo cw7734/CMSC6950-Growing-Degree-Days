@@ -53,6 +53,31 @@ This is a project for the course CMSC6950. From wikipedia.org: Growing degree da
 1. git branch branch_name
 
 
+### Task completed
+1. Minimum Core Tasks
+
+	* Download temperature 
+	* Min/max temperature
+	* Calculate the GDD
+	* Plot the GDD
+	* Plot the accumulated GDD
+	* Use version control (git) and collaboration tools(GitHub) throught this project
+	* Create a LaTeX report summarizing the results of your project
+	* Create a web based presenation for our results
+	* Implement our entire workflow as a Makefile and project is reproducible.
+	* Create a test suite to demonstrate our GDD calculation works as intended
+	* Create a Readme.md file to explain how to use/build your project.
+2. Secondary Tasks
+
+	* 
+
+
+
+
+
+
+
+
 
 ##### Run:
 
@@ -70,6 +95,8 @@ $ make test
 $ make report.pdf
 
 ```
+
+
 
 
 
