@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  16 JUN 2017 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  16 JUN 2017 18:09
 entering extended mode
 **./report.tex
 (report.tex
@@ -725,7 +725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
 Package natbib Warning: Citation `1' on page 2 undefined on input line 48.
 
-[2] <../Plot/STJOHNS/day_vs_temp_2013.png, id=117, 867.24pt x 433.62pt>
+[2] <../Plot/STJOHNS/day_vs_temp_2013.png, id=112, 867.24pt x 433.62pt>
 File: ../Plot/STJOHNS/day_vs_temp_2013.png Graphic file (type png)
 
 <use ../Plot/STJOHNS/day_vs_temp_2013.png>
@@ -733,7 +733,7 @@ Package pdftex.def Info: ../Plot/STJOHNS/day_vs_temp_2013.png used on input lin
 e 92.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
  [3 <../Plot/STJOHNS/day_vs_temp_2013.png>] <../Plot/HALIFAX/day_vs_temp_2013.p
-ng, id=128, 867.24pt x 433.62pt>
+ng, id=127, 867.24pt x 433.62pt>
 File: ../Plot/HALIFAX/day_vs_temp_2013.png Graphic file (type png)
 
 <use ../Plot/HALIFAX/day_vs_temp_2013.png>
@@ -741,16 +741,15 @@ Package pdftex.def Info: ../Plot/HALIFAX/day_vs_temp_2013.png used on input lin
 e 122.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
 
-<../Plot/Toronto/day_vs_temp_2013.png, id=130, 867.24pt x 433.62pt>
+<../Plot/Toronto/day_vs_temp_2013.png, id=129, 867.24pt x 433.62pt>
 File: ../Plot/Toronto/day_vs_temp_2013.png Graphic file (type png)
 
 <use ../Plot/Toronto/day_vs_temp_2013.png>
 Package pdftex.def Info: ../Plot/Toronto/day_vs_temp_2013.png used on input lin
 e 149.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
- [4 <../Plot/HALIFAX/day_vs_temp_2013.png> <../Plot/Toronto/day_vs_temp_2013.pn
-g>]
-<../Plot/VANCOUVER/day_vs_temp_2013.png, id=139, 867.24pt x 433.62pt>
+ [4 <../Plot/HALIFAX/day_vs_temp_2013.png>] <../Plot/VANCOUVER/day_vs_temp_2013
+.png, id=138, 867.24pt x 433.62pt>
 File: ../Plot/VANCOUVER/day_vs_temp_2013.png Graphic file (type png)
 
 <use ../Plot/VANCOUVER/day_vs_temp_2013.png>
@@ -758,13 +757,14 @@ Package pdftex.def Info: ../Plot/VANCOUVER/day_vs_temp_2013.png used on input l
 ine 171.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
 
-<../Plot/accGDD_2013.png, id=140, 867.24pt x 433.62pt>
+<../Plot/accGDD_2013.png, id=139, 867.24pt x 433.62pt>
 File: ../Plot/accGDD_2013.png Graphic file (type png)
 
 <use ../Plot/accGDD_2013.png>
 Package pdftex.def Info: ../Plot/accGDD_2013.png used on input line 192.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
- [5 <../Plot/VANCOUVER/day_vs_temp_2013.png>]
+ [5 <../Plot/Toronto/day_vs_temp_2013.png> <../Plot/VANCOUVER/day_vs_temp_2013.
+png>]
 <../Plot/accGDD_2014.png, id=147, 867.24pt x 433.62pt>
 File: ../Plot/accGDD_2014.png Graphic file (type png)
 
@@ -879,11 +879,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 381.
 Here is how much of TeX's memory you used:
  8408 strings out of 493323
  123797 string characters out of 3139067
- 228157 words of memory out of 3000000
+ 227152 words of memory out of 3000000
  11787 multiletter control sequences out of 15000+200000
  9816 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,39p,619b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,6n,39p,623b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
@@ -893,7 +893,7 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on report.pdf (14 pages, 1067668 bytes).
+Output written on report.pdf (14 pages, 1067646 bytes).
 PDF statistics:
  280 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)
