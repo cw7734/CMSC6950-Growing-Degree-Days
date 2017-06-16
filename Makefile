@@ -8,6 +8,9 @@ place = -p 'st johns, halifax, toronto, vancouver'
 id = -i '48871 50620 48549 888'
 year = -y '2013 2017'
 
+LinearRegression: Different_T_base
+	python $(r)secondary6.py
+
 Different_T_base: accGDD
 	python $(r)secondary3.py
 
