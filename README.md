@@ -93,7 +93,34 @@ $ make report.pdf
 ```
 
 
-
+Tasks Completed:
+----------
+ 
+<table>
+<th colspan="2" align=left>Minimum Core Tasks</th>
+<tr><td>1. download data automatically</td><td>autodownload.py (under master branch)</td></tr>
+<tr><td>2. plot an annual cycle of min/max daily temperature</td><td>min_max.py (under master branch)</td></tr>
+<tr><td>3. write a code to calculated GDD</td><td>calculationGDD.py (under master branch)</td></tr>
+<tr><td>4. plot accumulated GDD</td><td>accGDD.py (under master branch)</td></tr>
+<tr><td>5. use git hub</td><td>we are workig on the same repository in Git Hub</td></tr>
+<tr><td>6. create a LaTex report</td><td>report.tex (under gh-pages branch)</td></tr>
+<tr><td>7. create a web based presentation</td><td>CMSC6950_web_based_presentation.html (under gh-pages branch)</td></tr>
+<tr><td>8. implement your workflow as a makefile</td><td>makefile (under master branch)</td></tr>
+<tr><td>9. create a test suite</td><td>test_GDD.py (under master branch)</td></tr>
+<tr><td>10 adding documentation in source code and Readme.md</td><td>we added commit and text to explian our work in overall files</td></tr>
+<th colspan="2" align=left>Secondary Tasks</th>
+<tr><td>opTask3.py</td><td>Optional Task # 3.</td></tr>
+<tr><td>opTask4.py</td><td>Optional Task # 4.</td></tr>
+<tr><td>opTask5.py</td><td>Optional Task # 5.</td></tr>
+<tr><td>finalTask.py</td><td>Final Free Choice Task</td></tr>
+<tr><td>report.tex</td><td>LaTeX source file for the report.</td></tr>
+<tr><td>gh-pages/index.html</td><td>Web based presentation source code.</td></tr>
+<th colspan="2" align=left>Test File</th>
+<tr><td>Test_calculate_GDD.py</td><td>Testing calculate_GDD function.</td></tr>
+<th colspan="2" align=left>Data Files</th>
+<tr><td>report.pdf</td><td>Function to calculate GDD from a given data.</td></tr>
+<tr><td>GDD_Data.csv</td><td>Downloaded CSV data file.</td></tr>
+</table> 
 
 
 
