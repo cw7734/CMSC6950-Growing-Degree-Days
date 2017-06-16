@@ -39,12 +39,12 @@ def calculate_GDD(annual,baseT=T_baseList):
 def AccGDD_plot_byTbase(cityName,start=2013,end=2017,baseT=T_baseList):
 	GDDfilename = filepath+'GDD_Value_'+cityName+'_'+str(start)+'_'+str(end)+'.csv'
 	list_years = list(range(int(start),int(end)+1))
+	Data = pd.read_csv(GDDfilename, encoding = 'utf-8',index_col=0)
 	for year in list_years:
 		fig = plt.figure(figsize=(12, 6))
 		plt.title('Different Base Accumulated GDD in '+str(year)+', '+ cityName)
 		plt.ylabel('Different Base Accumulated GDD')
 		plt.xlabel('Day of Year')
-		Data = pd.read_csv(GDDfilename, encoding = 'utf-8',index_col=0)
 		instance = Data[Data['Date/Time'].str.contains(str(year))]			
 		plt.plot(instance.index.values.tolist(), instance['accGDD'],color=next(colors), label = "10 Base Accumulated GDD ")
 		for base in T_baseList:
