@@ -70,12 +70,7 @@ This is a project for the course CMSC6950. From wikipedia.org: Growing degree da
 2. Secondary Tasks
 
 	* Explore how GDD calculation depends on the choice of T_base
-        * linear regression
-
-
-
-
-
+	* Linear Regression
 
 
 
