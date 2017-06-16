@@ -53,24 +53,7 @@ This is a project for the course CMSC6950. From wikipedia.org: Growing degree da
 1. git branch branch_name
 
 
-### Task completed
-1. Minimum Core Tasks
 
-	* Download temperature 
-	* Min/max temperature
-	* Calculate the GDD
-	* Plot the GDD
-	* Plot the accumulated GDD
-	* Use version control (git) and collaboration tools(GitHub) throught this project
-	* Create a LaTeX report summarizing the results of your project
-	* Create a web based presenation for our results
-	* Implement our entire workflow as a Makefile and project is reproducible.
-	* Create a test suite to demonstrate our GDD calculation works as intended
-	* Create a Readme.md file to explain how to use/build your project.
-2. Secondary Tasks
-
-	* Explore how GDD calculation depends on the choice of T_base
-	* Linear Regression
 
 
 
@@ -109,17 +92,27 @@ Tasks Completed:
 <tr><td>9. create a test suite</td><td>test_GDD.py (under master branch)</td></tr>
 <tr><td>10 adding documentation in source code and Readme.md</td><td>we added commit and text to explian our work in overall files</td></tr>
 <th colspan="2" align=left>Secondary Tasks</th>
-<tr><td>opTask3.py</td><td>Optional Task # 3.</td></tr>
-<tr><td>opTask4.py</td><td>Optional Task # 4.</td></tr>
-<tr><td>opTask5.py</td><td>Optional Task # 5.</td></tr>
-<tr><td>finalTask.py</td><td>Final Free Choice Task</td></tr>
-<tr><td>report.tex</td><td>LaTeX source file for the report.</td></tr>
-<tr><td>gh-pages/index.html</td><td>Web based presentation source code.</td></tr>
-<th colspan="2" align=left>Test File</th>
-<tr><td>Test_calculate_GDD.py</td><td>Testing calculate_GDD function.</td></tr>
-<th colspan="2" align=left>Data Files</th>
-<tr><td>report.pdf</td><td>Function to calculate GDD from a given data.</td></tr>
-<tr><td>GDD_Data.csv</td><td>Downloaded CSV data file.</td></tr>
+<tr><td>secondary task 3</td><td>secondary3.py (under master branch)</td></tr>
+<tr><td>secondary task 6</td><td>secondary6.py (under master branch)</td></tr>
+
+### Tasks
+1. Minimum Core Tasks
+
+	* Download temperature 
+	* Min/max temperature
+	* Calculate the GDD
+	* Plot the GDD
+	* Plot the accumulated GDD
+	* Use version control (git) and collaboration tools(GitHub) throught this project
+	* Create a LaTeX report summarizing the results of your project
+	* Create a web based presenation for our results
+	* Implement our entire workflow as a Makefile and project is reproducible.
+	* Create a test suite to demonstrate our GDD calculation works as intended
+	* Create a Readme.md file to explain how to use/build your project.
+2. Secondary Tasks
+
+	* Explore how GDD calculation depends on the choice of T_base
+	* Linear Regression
 </table> 
 
 

@@ -239,7 +239,7 @@ In conclusion, between year 2013 and 2016, Toronto or Vancouver has the highest 
 \subsection{ \bf Year to Year Accumulated GDD }
 \subsection{St.John's}
 
-From figure (\ref{5.1}), in year 2014, St.John's has the highest accumulated GDD among year 2013 to 2016. Moreover, its value is around 850. In year 2015, the value of accumulated GDD for St.John's is around 600, it is the lowest value of accumulated GDD among year 2013 to 2016. 
+From figure (\ref{9}), in year 2014, St.John's has the highest accumulated GDD among year 2013 to 2016. Moreover, its value is around 850. In year 2015, the value of accumulated GDD for St.John's is around 600, it is the lowest value of accumulated GDD among year 2013 to 2016. 
 
 The difference of accumulated GDD between highest value to lowest value is around 250 for St.John's among year 2013 to 2016.
 
@@ -255,14 +255,14 @@ The difference of accumulated GDD between highest value to lowest value is aroun
 \begin{center}
 \begin{figure}[H]
 \includegraphics[width=5.25in]{../Plot/STJOHNS/GDD_LinearRegression_STJOHNS.png}
-\caption{linear regression of accumulated GDD for  St.John's in 2013.}
+\caption{linear regression of accumulated GDD for  St.John's.}
 \label{10}
 \end{figure}
 \end{center}
-
+Figure (\ref{10}) is the linear regression of accumulated GDD for St.John's from year 2013 to year 2016. From the plot we can see the overall accumulated GDD decease among these years.
 \subsection{Halifax}
 
-From figure (\ref{5.2}), in year 2015, Halifax has the highest accumulated GDD among year 2013 to 2016, its value is around 1100. In year 2013, the value of accumulated GDD for Halifax is around 1000, it is the lowest value of accumulated GDD among year 2013 to 2016. 
+From figure (\ref{11}), in year 2015, Halifax has the highest accumulated GDD among year 2013 to 2016, its value is around 1100. In year 2013, the value of accumulated GDD for Halifax is around 1000, it is the lowest value of accumulated GDD among year 2013 to 2016. 
 
 The difference of accumulated GDD between highest value to lowest value is around 100 for Halifax among year 2013 to 2016.
 
@@ -279,15 +279,15 @@ Compared to St.John's, the relative difference of accumulated GDD among year 201
 \begin{figure}[H]
 \includegraphics[width=5.25in]{../Plot/HALIFAX/GDD_LinearRegression_HALIFAX.png}
 
-\caption{linear regression of accumulated GDD for  Halifax in 2013.}
+\caption{linear regression of accumulated GDD for  Halifax.}
 \label{12}
 \end{figure}
 \end{center}
 
-
+From figure (\ref{12}) we see that the linear regression of accumulated GDD of Halifax is almost flat from year 2013 to year 2016.
 \subsection{Toronto}
 
-From figure (\ref{5.3}), in year 2016, Toronto has the highest accumulated GDD among year 2013 to 2016, its value is around 1500. In year 2014, the value of accumulated GDD for Halifax is around 1100, it is the lowest value of accumulated GDD among year 2013 to 2016. 
+From figure (\ref{13}), in year 2016, Toronto has the highest accumulated GDD among year 2013 to 2016, its value is around 1500. In year 2014, the value of accumulated GDD for Halifax is around 1100, it is the lowest value of accumulated GDD among year 2013 to 2016. 
 
 The difference of accumulated GDD between highest value to lowest value is around 400 for Toronto among year 2013 to 2016.
 
@@ -307,19 +307,16 @@ The difference of accumulated GDD between highest value to lowest value is aroun
 \end{figure}
 \end{center}
 
-
+From figure (\ref{12}) we see that the linear regression of accumulated GDD of Toronto is flat, however, the accumulated GDD of Toronto in year 2014 is much lower than other years.
 \subsection{Vancouver}
 
 
-From figure (\ref{5.4}), in year 2015, Vancouver has the highest acumulated GDD among year 2013 to 2016, its value is around 1400. In year 2013, the value of accumulated GDD for Halifax is around 1100, it is the lowest value of accumulated GDD among year 2013 to 2016. 
+From figure (\ref{15}), in year 2015, Vancouver has the highest acumulated GDD among year 2013 to 2016, its value is around 1400. In year 2013, the value of accumulated GDD for Halifax is around 1100, it is the lowest value of accumulated GDD among year 2013 to 2016. 
 
 The difference of accumulated GDD between highest value to lowest value is around 300 for Vancouver among year 2013 to 2016.
 \begin{center}
 \begin{figure}[H]
 \includegraphics[width=5.25in]{../Plot/VANCOUVER/accGDD_2013_2017.png}
-
-
-
 
 \caption{Accumulated GDD from 2013 to 2017 for Vancouver.}
 \label{15}
@@ -333,11 +330,15 @@ The difference of accumulated GDD between highest value to lowest value is aroun
 \label{16}
 \end{figure}
 \end{center}
+From figure (\ref{16}) we see that the linear regression of accumulated GDD of Vancouver is increase. Moreover, the accumulated GDD of Vancouver in year 2015 is much higher than other years.
 
-In conclusion, the biggest difference of accumulated GDD among year 2013 to 2016 belongs to Toronto which has the value 400. The smallest difference of accumulated GDD among year 2013 to 2016 belongs to Halifax which has the value 100.
+
+In conclusion, the biggest difference of accumulated GDD among year 2013 to 2016 belongs to Toronto which has the value 400. The smallest difference of accumulated GDD among year 2013 to 2016 belongs to Halifax which has the value 100. Moreover, city Vancouver has increased accumulated GDD value over year 2013 to 2016, city St.John's has decreased accumulated GDD value over year 2013 to 2016. City Toronto and City Halifax has almost flat changing of accumulated GDD over year 2013 to year 2016.
 
 \subsection{Accumulated GDD Plot with Different Base Temperature}
+In this section, we will explore the effect of different base temperature on calculating accumulated GDD. In our project we choose three different base temperature: $5^{o}$C, $10^{o}$C, $15^{o}$C. 
 
+$T_{base}=5^{o}$ is normally chosen when calculate GDD for wheat or barley. $T_{base}=10^{o}$ is normally chosen when calculate GDD for rice. $T_{base}=15^{o}$ is normally chosen when calculate GDD for some flower blooming.
 \begin{center}
 \begin{figure}[H]
 \includegraphics[width=5.25in]{../Plot/STJOHNS/accGDD_Base_2013.png}
@@ -347,42 +348,14 @@ In conclusion, the biggest difference of accumulated GDD among year 2013 to 2016
 \end{center}
 
 
-
-\begin{center}
-\begin{figure}[H]
-\includegraphics[width=5.25in]{../Plot/HALIFAX/accGDD_Base_2013.png}
-
-\caption{Accumulated GDD with different base temperature for Halifax in 2013.}
-\label{18}
-\end{figure}
-\end{center}
+From figure (\ref{17}), when we chose the base temperature equal to $5^{o}$C, in year 2013, St.John's can have almost 2000 accumulated GDD. However, when we chose the base temperature equal to $15^{o}$C, the accumulated GDD  decreases to 250. Therefore, we noticed that base temperature will make a big impact in calculating GDD. When we want to analysis the condition for plant maturity we should find out which base temperature should be used for a particular plant.
 
 
 
-\begin{center}
-\begin{figure}[H]
-\includegraphics[width=5.25in]{../Plot/TORONTO/accGDD_Base_2013.png}
-\caption{Accumulated GDD with different base temperature for Toronto in 2013.}
-\label{19}
-\end{figure}
-\end{center}
-
-\begin{center}
-\begin{figure}[H]
-\includegraphics[width=5.25in]{../Plot/TORONTO/GDD_LinearRegression_TORONTO.png}
-\caption{linear regression of accumulated GDD for Toronto in 2013.}
-\label{20}
-\end{figure}
-\end{center}
 
 
-\begin{center}
-\begin{figure}[H]
-\includegraphics[width=5.25in]{../Plot/VANCOUVER/accGDD_Base_2013.png}
-\caption{Accumulated GDD with different base temperature for Vancouver in 2013.}
-\label{21}
-\end{figure}
-\end{center}
+
+
 
 
 \section{ \bf Discussion}
@@ -394,7 +367,7 @@ For city St.John's, the accumulated GDD is relatively low compare to other selec
 \section{Conclusion}
 From our project, we can predict that those flowers can bloom in St.John's, it is also can blooming in Halifax, Toronto and Vancouver. However, for some agriculture plants such as wheat (need 1550-1680 GDD to maturity) can not grow well in St.John's and Halifax. Barley (need 1290-1540 GDD to maturity) can grow in Halifax but not in St.John's. Moreover, for some insect such as oats (1500-1750 GDD to maturity) can not live in Halifax and St.John's.
 
-
+In our project, Xiao Wang did the most contribution on program logic and wrote most python coding. Yuan Zhi did the python coding to calculate the accumulated GDD for selected cities and added comments to other python code. Huizhong Liu did the part of test suite, and documentation work. Chen Wei did most work of creating the Latex report and web presentation, also part of documentation work. Thanjida Akhter helped with understanding the project task and added some documentations in several files. Md Kamrul Hasan and Maulik Rawal did the work of helping others understand the task and python code.
 
 
 \section{References}

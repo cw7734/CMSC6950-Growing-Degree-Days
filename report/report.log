@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  16 JUN 2017 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  16 JUN 2017 13:28
 entering extended mode
 **./report.tex
 (report.tex
@@ -785,12 +785,8 @@ File: ../Plot/accGDD_2016.png Graphic file (type png)
 <use ../Plot/accGDD_2016.png>
 Package pdftex.def Info: ../Plot/accGDD_2016.png used on input line 227.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
-
-
-LaTeX Warning: Reference `5.1' on page 7 undefined on input line 242.
-
-[7 <../Plot/accGDD_2015.png> <../Plot/accGDD_2016.png>]
-<../Plot/STJOHNS/accGDD_2013_2017.png, id=167, 867.24pt x 433.62pt>
+ [7 <../Plot/accGDD_2015.png> <../Plot/accGDD_2016.png>] <../Plot/STJOHNS/accGD
+D_2013_2017.png, id=168, 867.24pt x 433.62pt>
 File: ../Plot/STJOHNS/accGDD_2013_2017.png Graphic file (type png)
 
 <use ../Plot/STJOHNS/accGDD_2013_2017.png>
@@ -798,7 +794,7 @@ Package pdftex.def Info: ../Plot/STJOHNS/accGDD_2013_2017.png used on input lin
 e 248.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
 
-<../Plot/STJOHNS/GDD_LinearRegression_STJOHNS.png, id=168, 867.24pt x 433.62pt>
+<../Plot/STJOHNS/GDD_LinearRegression_STJOHNS.png, id=169, 867.24pt x 433.62pt>
 File: ../Plot/STJOHNS/GDD_LinearRegression_STJOHNS.png Graphic file (type png)
 <use ../Plot/STJOHNS/GDD_LinearRegression_STJOHNS.png>
 Package pdftex.def Info: ../Plot/STJOHNS/GDD_LinearRegression_STJOHNS.png used 
@@ -806,10 +802,7 @@ on input line 257.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
  [8 <../Plot/STJOHNS/accGDD_2013_2017.png> <../Plot/STJOHNS/GDD_LinearRegressio
 n_STJOHNS.png>]
-
-LaTeX Warning: Reference `5.2' on page 9 undefined on input line 265.
-
-<../Plot/HALIFAX/accGDD_2013_2017.png, id=177, 867.24pt x 433.62pt>
+<../Plot/HALIFAX/accGDD_2013_2017.png, id=180, 867.24pt x 433.62pt>
 File: ../Plot/HALIFAX/accGDD_2013_2017.png Graphic file (type png)
 
 <use ../Plot/HALIFAX/accGDD_2013_2017.png>
@@ -817,119 +810,80 @@ Package pdftex.def Info: ../Plot/HALIFAX/accGDD_2013_2017.png used on input lin
 e 272.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
 
-<../Plot/HALIFAX/GDD_LinearRegression_HALIFAX.png, id=178, 867.24pt x 433.62pt>
+<../Plot/HALIFAX/GDD_LinearRegression_HALIFAX.png, id=181, 867.24pt x 433.62pt>
 File: ../Plot/HALIFAX/GDD_LinearRegression_HALIFAX.png Graphic file (type png)
 <use ../Plot/HALIFAX/GDD_LinearRegression_HALIFAX.png>
 Package pdftex.def Info: ../Plot/HALIFAX/GDD_LinearRegression_HALIFAX.png used 
 on input line 280.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
  [9 <../Plot/HALIFAX/accGDD_2013_2017.png>]
-
-LaTeX Warning: Reference `5.3' on page 10 undefined on input line 290.
-
-<../Plot/TORONTO/accGDD_2013_2017.png, id=185, 867.24pt x 433.62pt>
+<../Plot/TORONTO/accGDD_2013_2017.png, id=190, 867.24pt x 433.62pt>
 File: ../Plot/TORONTO/accGDD_2013_2017.png Graphic file (type png)
 
 <use ../Plot/TORONTO/accGDD_2013_2017.png>
 Package pdftex.def Info: ../Plot/TORONTO/accGDD_2013_2017.png used on input lin
 e 296.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
- [10 <../Plot/HALIFAX/GDD_LinearRegression_HALIFAX.png> <../Plot/TORONTO/accGDD
-_2013_2017.png>]
-<../Plot/TORONTO/GDD_LinearRegression_TORONTO.png, id=194, 867.24pt x 433.62pt>
+ [10 <../Plot/HALIFAX/GDD_LinearRegression_HALIFAX.png>]
+<../Plot/TORONTO/GDD_LinearRegression_TORONTO.png, id=198, 867.24pt x 433.62pt>
 File: ../Plot/TORONTO/GDD_LinearRegression_TORONTO.png Graphic file (type png)
 <use ../Plot/TORONTO/GDD_LinearRegression_TORONTO.png>
 Package pdftex.def Info: ../Plot/TORONTO/GDD_LinearRegression_TORONTO.png used 
 on input line 304.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
-
-
-LaTeX Warning: Reference `5.4' on page 11 undefined on input line 314.
-
-<../Plot/VANCOUVER/accGDD_2013_2017.png, id=195, 867.24pt x 433.62pt>
+ [11 <../Plot/TORONTO/accGDD_2013_2017.png> <../Plot/TORONTO/GDD_LinearRegressi
+on_TORONTO.png>]
+<../Plot/VANCOUVER/accGDD_2013_2017.png, id=209, 867.24pt x 433.62pt>
 File: ../Plot/VANCOUVER/accGDD_2013_2017.png Graphic file (type png)
 
 <use ../Plot/VANCOUVER/accGDD_2013_2017.png>
 Package pdftex.def Info: ../Plot/VANCOUVER/accGDD_2013_2017.png used on input l
 ine 319.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
- [11 <../Plot/TORONTO/GDD_LinearRegression_TORONTO.png>]
-<../Plot/VANCOUVER/GDD_LinearRegression_VANCOUVER.png, id=202, 867.24pt x 433.6
+
+<../Plot/VANCOUVER/GDD_LinearRegression_VANCOUVER.png, id=210, 867.24pt x 433.6
 2pt>
 File: ../Plot/VANCOUVER/GDD_LinearRegression_VANCOUVER.png Graphic file (type p
 ng)
  <use ../Plot/VANCOUVER/GDD_LinearRegression_VANCOUVER.png>
 Package pdftex.def Info: ../Plot/VANCOUVER/GDD_LinearRegression_VANCOUVER.png u
-sed on input line 331.
+sed on input line 328.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
-
-<../Plot/STJOHNS/accGDD_Base_2013.png, id=203, 867.24pt x 433.62pt>
+ [12 <../Plot/VANCOUVER/accGDD_2013_2017.png> <../Plot/VANCOUVER/GDD_LinearRegr
+ession_VANCOUVER.png>] <../Plot/STJOHNS/accGDD_Base_2013.png, id=219, 867.24pt 
+x 433.62pt>
 File: ../Plot/STJOHNS/accGDD_Base_2013.png Graphic file (type png)
 
 <use ../Plot/STJOHNS/accGDD_Base_2013.png>
 Package pdftex.def Info: ../Plot/STJOHNS/accGDD_Base_2013.png used on input lin
-e 343.
+e 344.
 (pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
- [12 <../Plot/VANCOUVER/accGDD_2013_2017.png> <../Plot/VANCOUVER/GDD_LinearRegr
-ession_VANCOUVER.png>]
-<../Plot/HALIFAX/accGDD_Base_2013.png, id=212, 867.24pt x 433.62pt>
-File: ../Plot/HALIFAX/accGDD_Base_2013.png Graphic file (type png)
-
-<use ../Plot/HALIFAX/accGDD_Base_2013.png>
-Package pdftex.def Info: ../Plot/HALIFAX/accGDD_Base_2013.png used on input lin
-e 353.
-(pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
-
-<../Plot/TORONTO/accGDD_Base_2013.png, id=213, 867.24pt x 433.62pt>
-File: ../Plot/TORONTO/accGDD_Base_2013.png Graphic file (type png)
-
-<use ../Plot/TORONTO/accGDD_Base_2013.png>
-Package pdftex.def Info: ../Plot/TORONTO/accGDD_Base_2013.png used on input lin
-e 364.
-(pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
- [13 <../Plot/STJOHNS/accGDD_Base_2013.png> <../Plot/HALIFAX/accGDD_Base_2013.p
-ng>]
-File: ../Plot/TORONTO/GDD_LinearRegression_TORONTO.png Graphic file (type png)
-
-<use ../Plot/TORONTO/GDD_LinearRegression_TORONTO.png>
-Package pdftex.def Info: ../Plot/TORONTO/GDD_LinearRegression_TORONTO.png used 
-on input line 372.
-(pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
-
-<../Plot/VANCOUVER/accGDD_Base_2013.png, id=223, 867.24pt x 433.62pt>
-File: ../Plot/VANCOUVER/accGDD_Base_2013.png Graphic file (type png)
-
-<use ../Plot/VANCOUVER/accGDD_Base_2013.png>
-Package pdftex.def Info: ../Plot/VANCOUVER/accGDD_Base_2013.png used on input l
-ine 381.
-(pdftex.def)             Requested size: 379.4175pt x 189.70828pt.
- [14 <../Plot/TORONTO/accGDD_Base_2013.png>] [15 <../Plot/VANCOUVER/accGDD_Base
-_2013.png>]
+ [13 <../Plot/STJOHNS/accGDD_Base_2013.png>]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
-[16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 381.
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 381.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 381.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 381.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 60421F942B327E0682168B898CAF97C0;1429.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 408.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 381.
  ) 
 Here is how much of TeX's memory you used:
- 8434 strings out of 493323
- 124424 string characters out of 3139067
- 228567 words of memory out of 3000000
- 11807 multiletter control sequences out of 15000+200000
+ 8408 strings out of 493323
+ 123797 string characters out of 3139067
+ 228157 words of memory out of 3000000
+ 11787 multiletter control sequences out of 15000+200000
  9816 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,39p,525b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,6n,39p,619b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
@@ -939,9 +893,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on report.pdf (16 pages, 1194206 bytes).
+Output written on report.pdf (14 pages, 1067668 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 285 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 
